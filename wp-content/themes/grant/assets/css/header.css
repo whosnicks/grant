@@ -1,0 +1,21 @@
+.primary-menu .menu-item {
+  border-bottom: 1px solid #ddd;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  color: #333;
+  display: block;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.primary-menu .menu-item:hover {
+  color: #007bff;
+  border-bottom: 1px solid #007bff;
+}
+
+.custom-logo {
+  width: 150px;
+  height: auto;
+}
