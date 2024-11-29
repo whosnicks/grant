@@ -32,6 +32,7 @@ $thunbnail_url = get_the_post_thumbnail_url($about_page, 'full');
     </div>
 </div>
 
+<!-- TODO: Add dinamically content -->
 <!-- Why Us Section -->
 <section class="bg-gray-100 shadow-inner dark:bg-gray-900 py-12 mt-10">
     <div class="container mx-auto text-center">

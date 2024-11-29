@@ -19,7 +19,7 @@ $query = new WP_Query($args);
 <!-- Carousel Start -->
 <div id="default-carousel" class="relative w-full h-[80vh]" data-carousel="slide">
     <!-- Carousel wrapper -->
-    <div class="relative h-full overflow-hidden rounded-lg md:h-full">
+    <div class="relative h-full overflow-hidden md:h-full">
         <!-- Item -->
         <?php
         if ($query->have_posts()) :
@@ -31,7 +31,7 @@ $query = new WP_Query($args);
                 $thumbnail_url = $thumbnail_id ? get_the_post_thumbnail_url(get_the_ID(), 'full') : $fallback_thumbnail;
 
         ?>
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="hidden duration-700 ease-in-out py-0.5" data-carousel-item>
                     <div class="relative flex items-center justify-center w-full h-full">
                         <!-- Text container -->
                         <div class="absolute z-10 text-center w-full sm:w-3/4 md:w-1/2 text-white p-4 sm:p-6 md:p-8 bg-blue-500/85 rounded-md">
@@ -45,7 +45,7 @@ $query = new WP_Query($args);
                         </div>
                         <!-- End Text Container -->
 
-                        <img src="<?= esc_url($thumbnail_url) ?>" class="absolute top-0 left-0 w-full h-full object-cover rounded-md" alt="...">
+                        <img src="<?= esc_url($thumbnail_url) ?>" class="absolute top-0 left-0 w-full h-full object-cover" alt="...">
                     </div>
                 </div>
 
@@ -93,7 +93,7 @@ $query = new WP_Query($args);
 ?>
 
 <!-- TODO: Finish thiss -->
-<div class="w-full h-36 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+<div class="w-full h-36 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] shadow-inner">
     <ul id="logos" class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
         <?php
         if ($query->have_posts()) :
@@ -123,7 +123,7 @@ $thumbnail_id = get_post_thumbnail_id($about_page->ID);
 $thumbnail_url = $thumbnail_id ? wp_get_attachment_url($thumbnail_id) : 'image.jpg';
 ?>
 
-<section class="bg-white dark:bg-gray-900">
+<section class="bg-gray-100 dark:bg-gray-900 shadow-inner">
     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"><?= esc_html($about_page->post_title) ?></h2>
@@ -144,11 +144,12 @@ $thumbnail_url = $thumbnail_id ? wp_get_attachment_url($thumbnail_id) : 'image.j
 
 <!-- TODO: Add content dinamically -->
 <!-- Contact Start -->
-<section class="bg-white dark:bg-gray-900">
-    <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-        <img class="w-full dark:hidden rounded-xl" src="http://localhost/grant/wp-content/uploads/2024/11/lawyer_right.jpeg" alt="dashboard image">
-        <img class="w-full hidden dark:block" src="http://localhost/grant/wp-content/uploads/2024/11/lawyer_right.jpeg" alt="dashboard image">
-        <div class="mt-4 md:mt-0">
+<section class="dark:bg-gray-900 shadow">
+    <div class="lg:gap-8 lg:flex lg:items-center lg:flex-row flex-col gap-0 py-5">
+        <div class="w-full h-96 lg:w-1/2 lg:h-[34rem] overflow-hidden">
+            <img class="w-full object-cover" src="http://localhost/grant/wp-content/uploads/2024/11/lawyer_right.jpeg" alt="lawyer">
+        </div>
+        <div class="mt-4 md:mt-0 w-full lg:w-1/2 px-4 text-center lg:text-left">
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">You did what?</h2>
             <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
                 Are you sure? Our laywers are trained to prove you did nothing wrong! Call us today and let's have a chat, but please stop talking about your crimes on the internet, it's not looking good.

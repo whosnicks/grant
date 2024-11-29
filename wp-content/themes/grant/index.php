@@ -4,18 +4,9 @@ get_header();
 
 if (have_posts()) : ?>
 
-    <main class="pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased">
+    <main class="dark:bg-gray-900 antialiased py-1">
 
-        <!-- Header Section -->
-        <header class="bg-blue-200">
-            <div class="md:flex justify-center py-16">
-                <div class="p-8 my-auto">
-                    <h1 class="text-orange-100 text-3xl text-center">Michael Grant</h1>
-                    <p class="text-gray-600 text-xl text-center">Blog</p>
-                </div>
-            </div>
-        </header>
-
+        <!-- TODO: Don't display all posts? -->
         <!-- Main Content Section -->
         <div class="flex flex-row lg:flex-row justify-between space-y-8 lg:space-y-0">
             <!-- Sidebar Section -->
