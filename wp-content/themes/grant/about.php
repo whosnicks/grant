@@ -39,9 +39,9 @@ $thunbnail_url = get_the_post_thumbnail_url($about_page, 'full');
         <h2 class="text-3xl font-bold mb-8 text-gray-900 dark:text-white">
             Why Choose Our Law Firm?
         </h2>
-        <div class="flex flex-wrap justify-center">
-            <div class="p-4 md:w-1/4 sm:w-1/2">
-                <div class="px-4 py-6 transform transition duration-500 hover:scale-110 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+        <div class="flex flex-wrap lg:flex-nowrap justify-center gap-4">
+            <div class="w-full md:w-1/4 sm:w-1/2">
+                <div class="px-4 py-6 transform transition duration-500 hover:scale-110 bg-white dark:bg-gray-800 rounded-lg shadow-md h-full min-h-[200px]">
                     <div class="flex justify-center text-blue-600 dark:text-blue-400 mb-4">
                         <i class="fas fa-balance-scale fa-3x"></i>
                     </div>
@@ -52,8 +52,8 @@ $thunbnail_url = get_the_post_thumbnail_url($about_page, 'full');
                 </div>
             </div>
 
-            <div class="p-4 md:w-1/4 sm:w-1/2">
-                <div class="px-4 py-6 transform transition duration-500 hover:scale-110 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <div class="w-full md:w-1/4 sm:w-1/2">
+                <div class="px-4 py-6 transform transition duration-500 hover:scale-110 bg-white dark:bg-gray-800 rounded-lg shadow-md h-full min-h-[200px]">
                     <div class="flex justify-center text-blue-600 dark:text-blue-400 mb-4">
                         <i class="fas fa-handshake fa-3x"></i>
                     </div>
@@ -64,8 +64,8 @@ $thunbnail_url = get_the_post_thumbnail_url($about_page, 'full');
                 </div>
             </div>
 
-            <div class="p-4 md:w-1/4 sm:w-1/2">
-                <div class="px-4 py-6 transform transition duration-500 hover:scale-110 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <div class="w-full md:w-1/4 sm:w-1/2">
+                <div class="px-4 py-6 transform transition duration-500 hover:scale-110 bg-white dark:bg-gray-800 rounded-lg shadow-md h-full min-h-[200px]">
                     <div class="flex justify-center text-blue-600 dark:text-blue-400 mb-4">
                         <i class="fas fa-gavel fa-3x"></i>
                     </div>
@@ -76,8 +76,8 @@ $thunbnail_url = get_the_post_thumbnail_url($about_page, 'full');
                 </div>
             </div>
 
-            <div class="p-4 md:w-1/4 sm:w-1/2">
-                <div class="px-4 py-6 transform transition duration-500 hover:scale-110 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+            <div class="w-full md:w-1/4 sm:w-1/2">
+                <div class="px-4 py-6 transform transition duration-500 hover:scale-110 bg-white dark:bg-gray-800 rounded-lg shadow-md h-full min-h-[200px]">
                     <div class="flex justify-center text-blue-600 dark:text-blue-400 mb-4">
                         <i class="fas fa-trophy fa-3x"></i>
                     </div>
