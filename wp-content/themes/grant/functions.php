@@ -50,5 +50,6 @@ function enqueue_styles_and_scripts()
     wp_enqueue_style('contactcss', get_template_directory_uri() . '/assets/css/contact-form.css', array(), '1.0', 'all');
     wp_enqueue_script('header-js', get_template_directory_uri() . '/assets/js/header.js', array(), '1.0', true);
     wp_enqueue_script('flowbite', get_template_directory_uri() . '/node_modules/flowbite/dist/flowbite.min.js', array(), '1.0', true);
+    wp_enqueue_script('font-awesome', 'https://kit.fontawesome.com/dabad9c33d.js', array(), null, true);
 }
 add_action('wp_enqueue_scripts', 'enqueue_styles_and_scripts');
